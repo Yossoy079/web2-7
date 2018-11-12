@@ -19,8 +19,7 @@ var number = Math.floor(Math.random() * 50);
 var flg = true;
 while(flg){
   var answer = parseInt(window.prompt('数あてゲーム。0~50の数字を入力してください！'));
-
-var message;
+  var message;
   if(answer === number){
   message = '正解で～～す';
   flg = false;

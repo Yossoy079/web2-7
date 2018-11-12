@@ -16,14 +16,14 @@
 //}
 
 var number = Math.floor(Math.random() * 50);
-bool flg = false;
-while(true){
+var flg = true;
+while(flg){
   var answer = parseInt(window.prompt('数あてゲーム。0~50の数字を入力してください！'));
 
 var message;
   if(answer === number){
   message = '正解で～～す';
-  flg = true;
+  flg = false;
   }
   else if(answer < number){
  message = '答えはもっと大きい数字で～す'; 
@@ -36,6 +36,4 @@ var message;
   }
 
   document.getElementById('choice').textContent = message;
-  if(flg == true)
-    break;
 }

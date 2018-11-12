@@ -15,14 +15,11 @@
 //  document.getElementById('choice').textContent = 'キャンセルが押されました';
 //}
 
-var number = Math.floor(Math.random() * 50);
-var flg = true;
-while(flg){
-  var answer = parseInt(window.prompt('数あてゲーム。0~50の数字を入力してください！'));
+var number = Math.floor(Math.random() * 3);
+  var answer = parseInt(window.prompt('数あてゲーム。0~3の数字を入力してください！'));
   var message;
   if(answer === number){
   message = '正解で～～す';
-  flg = false;
   }
   else if(answer < number){
  message = '答えはもっと大きい数字で～す'; 
@@ -35,4 +32,3 @@ while(flg){
   }
 
   document.getElementById('choice').textContent = message;
-}
